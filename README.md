@@ -1,122 +1,85 @@
-# Amazon Customer 360 Analytics Platform
+Sales Analytics - End to End Project
 
-## Project Overview
-- End-to-end data analytics project built using Python, SQL, and Power BI  
-- Focuses on analyzing e-commerce customer, order, and product data  
-- Generates business insights and KPIs for decision making  
+Built with MySQL | Power BI | Python
 
----
 
-## Business Objective
-- Understand customer purchasing behavior  
-- Analyze sales performance and profitability  
-- Identify top customers and top-performing products  
-- Study regional and category-wise trends  
-- Improve data-driven business decisions  
+About
 
----
+I am Yash Shukla, an aspiring data analyst from India. This is my first end to end data analytics project where I worked on everything myself - from creating the dataset to building the final dashboard. I built this project to learn how real world data analysis works and to grow my skills in SQL, Python and Power BI.
 
-## Dataset Description
+The dataset I used is a custom dataset I created myself based on Amazon India sales data. It covers 911 customers, 997 products and sales across 9 Indian states.
 
-### Customers Table
-- Customer ID  
-- Name  
-- Age  
-- Gender  
-- City  
-- State  
-- Total Orders  
 
-### Orders Table
-- Order ID  
-- Product Category  
-- Quantity  
-- Order Date  
-- Payment Mode  
-- Discount  
-- Total Amount  
+Dashboard Preview
 
-### Products Table
-- Product ID  
-- Product Name  
-- Category  
-- Brand  
-- Unit Price  
-- Cost Price  
-- Stock Quantity  
+![Overview](05_screenshots/01_overview.png)
+![Customers](05_screenshots/02_customers.png)
+![Products](05_screenshots/03_products.png)
+![Geography](05_screenshots/04_geography.png)
+![RFM Analysis](05_screenshots/05_rfm_analysis.png)
 
----
 
-## Data Pipeline
-- Data extraction from MySQL using SQL queries  
-- Data integration using joins across all tables  
-- Data cleaning and preprocessing using Python (Pandas, NumPy)  
-- Creation of unified analytical dataset  
+What I Found in the Data
 
----
+Gujarat is the top performing state contributing 18.6% of total revenue across all 9 states.
 
-## Feature Engineering
-- Sales = Quantity × Unit Price  
-- Cost = Quantity × Cost Price  
-- Profit = Sales − Cost  
-- Profit Margin calculation  
-- Customer segmentation based on behavior  
+Big Spenders are only 29% of total customers but they are responsible for more than half of the total profit. This tells me that retaining this small group of customers is extremely important for the business.
 
----
+Electronics is the highest selling category generating around 2.98 lakh in revenue.
 
-## Exploratory Data Analysis (EDA)
-- Customer spending patterns  
-- Sales trends over categories and regions  
-- Product performance analysis  
-- Discount impact on revenue and profit  
-- Payment mode distribution  
+I identified 212 risky customers using RFM analysis who have not purchased recently and need to be targeted with retention campaigns.
 
----
+Monthly sales were consistent throughout the year with the highest peak coming in July.
 
-## SQL Analysis Performed
-- Joins across customers, orders, and products  
-- Aggregations (SUM, COUNT, AVG)  
-- Window functions (DENSE_RANK)  
-- Top customers analysis  
-- State-wise customer distribution  
-- High-value customer identification  
-- Product-level performance analysis  
 
----
+Tools I Used
 
-## Power BI Dashboard
-- Total Revenue KPI  
-- Total Profit KPI  
-- Top Customers analysis  
-- Top Products analysis  
-- Category-wise performance  
-- State-wise sales distribution  
-- Payment mode analysis  
-- Sales trend visualization  
+MySQL 8.0 was used for all data modelling, writing queries, joins, window functions and RFM scoring.
 
----
+Python was used for data cleaning and preprocessing before loading into Power BI.
 
-## Key Insights
-- Identified high-value customers contributing maximum revenue  
-- Found most profitable product categories  
-- Analyzed regional performance differences  
-- Observed customer payment preferences  
-- Evaluated discount impact on profitability  
+Power BI was used to build a 5 page interactive dashboard with slicers, maps and charts.
 
----
 
-## Skills Demonstrated
-- SQL (Joins, Aggregations, Window Functions)  
-- Python (Pandas, NumPy, Data Cleaning)  
-- Data Modeling  
-- Feature Engineering  
-- Exploratory Data Analysis  
-- Power BI Dashboard Creation  
-- End-to-End Project Workflow  
+Project Structure
 
----
+01_dataset contains the data dictionary explaining every column in the dataset.
 
-## Conclusion
-- Built a complete real-world analytics pipeline  
-- Demonstrates ability to transform raw data into business insights  
-- Strong portfolio project for Data Analyst roles  
+02_sql contains 7 SQL scripts covering table setup, KPI analysis, customer analysis, product analysis, time analysis, geographic analysis and RFM analysis.
+
+03_python contains the data cleaning script written in Python.
+
+04_dashboard contains the Power BI pbix file.
+
+05_screenshots contains screenshots of all 5 dashboard pages.
+
+
+SQL Files Breakdown
+
+01_table_setup.sql handles database setup and merged table creation.
+02_kpi_analysis.sql covers total sales, profit, orders and cost KPIs.
+03_customer_analysis.sql covers customer segments and top customers by state.
+04_product_analysis.sql covers top and bottom products and category wise profit.
+05_time_analysis.sql covers monthly trends and month on month growth using LAG.
+06_geographic_analysis.sql covers state and city wise sales and discount analysis.
+07_rfm_analysis.sql covers RFM scoring using NTILE and CASE WHEN logic.
+
+
+Dashboard Pages
+
+Page 1 Overview shows total sales, profit, category performance and payment mode breakdown.
+Page 2 Customers shows gender split, top customers by sales and profit and India map.
+Page 3 Products shows top and bottom performing products and profit margins.
+Page 4 Geography shows state and city wise sales and profit with percentage breakdown.
+Page 5 RFM Analysis shows customer segmentation into Champions, Loyal, Big Spenders, Regular and Risky customers.
+
+
+What This Project Taught Me
+
+This project made me realise that data analysis is not just about making charts. It is about asking the right questions and finding answers that actually matter to a business. The RFM analysis part was the most interesting for me because it showed me how you can understand customer behaviour just from transaction data. I learned a lot building this and I am excited to keep growing.
+
+
+Connect with Me
+
+GitHub - github.com/Yashshukla11111
+LinkedIn - add your linkedin link here
